@@ -50,10 +50,14 @@ def add_pet_to_customer(customer, new_pet):
     customer["pets"].append(new_pet)
 
 def customer_can_afford_pet(customer, new_pet):
-    if customer["cash"] >= new_pet["price"]:
-        return True
-    else:
-        return False
+    return customer["cash"] >= new_pet["price"]
+
+# For extension 3 I realised I didn't need my if or else statement.
+# I only had to return whether the customer's money was greater or equal
+# the new price of the pet.
+
+
+       
 
         
 
